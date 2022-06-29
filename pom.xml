@@ -48,7 +48,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
         <!-- Vartotojo laukelių validacijai -->
@@ -61,13 +61,13 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
+            <version>8.0.19</version>
         </dependency>
         <!-- DB- Hibernate -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.3.7.Final</version>
+            <version>5.4.10.Final</version>
         </dependency>
         <!-- jsp jstl anotacijoms (pvz. forEach, url, param)-->
         <dependency>
