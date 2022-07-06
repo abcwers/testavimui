@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTests"> <!-- Test Suite pavadinimas, pvz. SmokeTests arba RegressionTests-->
+
+		
+		<test name="test1">
+			<!-- Test -->
+			<classes>
+				<!-- klase -->
+				
+				<class name="Tests.PRISIJUNGTI"> <!-- PRISIJUNGTI-->
+					<methods>
+						<include name="PRISIJUNGTI_PS1"/> <!-- Sukurti naudotojo paskyrą -->
+					</methods>
+				</class>
+				
+								<class name="Tests.ATSIJUNGTI"> <!-- ATSIJUNGTI -->
+					<methods>
+						<include name="ATSIJUNGTI_PS1"/>  <!-- Atsijungti nuo paskyros -->
+					</methods>
+				</class>
+				
+				<class name="Tests.REGISTRACIJA"> <!-- PRISIREGISTRUOTI -->
+					<methods>
+						<include name="REGISTRACIJA_PS1"/> <!-- Naujo vartotojo registracija -->
+					</methods>
+				</class>
+
+
+
+
+
+
+			</classes>
+		</test>
+		<!-- Test -->
+		
+	</suite>
+	<!-- Suite -->

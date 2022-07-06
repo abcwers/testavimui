@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath />
+        <!-- lookup parent from repository -->
     </parent>
     <groupId>com.spring</groupId>
     <artifactId>calculator</artifactId>
@@ -15,18 +15,36 @@
     <packaging>war</packaging>
     <name>calculator</name>
     <description>Calculator project for Spring Boot</description>
-
     <properties>
         <!-- JAVA VERSIJA 1.8 (!) -->
         <java.version>1.8</java.version>
     </properties>
-    <!-- jeigu nėra pc įdiegta 1.8 versijos, galima pabandyti per maven parsiųsti
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-    -->
+    <!--
+	jeigu nėra pc įdiegta 1.8 versijos, galima pabandyti per maven parsiųsti
+	<properties>
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	-->
     <dependencies>
+        <!-- bibliotekos reikalingos testams pradzia -->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+        </dependency>
+        <!-- bibliotekos reikalingos testams pabaiga -->
         <!-- sukonfigūruotas Spring Boot web aplikacijoms -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,11 +56,12 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!--Reikalingas, kad veiktų projektas su JSP failais -->
+        <!-- Reikalingas, kad veiktų projektas su JSP failais -->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>runtime</scope><!--in my case provided not working so write runtime-->
+            <scope>runtime</scope>
+            <!-- in my case provided not working so write runtime -->
         </dependency>
         <!-- Jeigu nepridėsime, gausime javax.servlet.ServletException -->
         <dependency>
@@ -69,7 +88,7 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.4.10.Final</version>
         </dependency>
-        <!-- jsp jstl anotacijoms (pvz. forEach, url, param)-->
+        <!-- jsp jstl anotacijoms (pvz. forEach, url, param) -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -84,7 +103,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <!-- testavimui  -->
+        <!-- testavimui -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -97,15 +116,13 @@
             </exclusions>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
-            <!--vykdomajam (executable) jar pagaminti  -->
+            <!-- vykdomajam (executable) jar pagaminti -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
-
 </project>

@@ -1,0 +1,10 @@
+﻿username|password|password confirm|skaicius1|skaicius2|veiksmo ženklas| -- eilutė, kurios nenaudosime, tai parodo struktūrą
+user|user|user|50|2|/| -- PRISIJUNGTI_PS1 --prisijungimas
+petras|petras|petras|40|2|/| -- PRISIJUNGTI_AS1()--prisijungimo atšaukimas
+|antanas|antanas|35|2|+| -- PRISIJUNGTI_AS2() -- neįveda privalomų laukų
+admn|admin|admin|40|-2|-| -- PRISIJUNGTI_AS3() -- duomenys su klaidomis
+usernameUUID|slaptazodis|slaptazodis|101|50|-| -- REGISTRACIJA_PS1() -- unikalus Username
+ona|ona|ona|102|2|*| -- REGISTRACIJA_AS1() -- atšaukia registraciją
+|jonukas|jonukas|55|2|/| -- REGISTRACIJA_AS2() -- neįveda privalomų laukų 
+o|ba|lova|33|2|-| -- REGISTRACIJA_AS3() -- įveda registracijos duomenis neatitinkančius reikalavimų
+bamba|bamba|bamba|31|2|+| -- REGISTRACIJA_AS4() -- įveda egzistuojančios paskyros duomenis

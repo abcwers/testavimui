@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionTests"> <!-- Test Suite pavadinimas, pvz. SmokeTests arba RegressionTests-->
+<parameter name="regresTest" value="true" /> <!-- regresTest=true nustatymas, duomenų failo tipui nustatyti -->
+		
+		<test name="test2">
+			<!-- Test -->
+			<classes>
+				<!-- klase -->
+				<class name="Tests.REGISTRACIJA"/> <!-- PRISIREGISTRUOTI -->
+				<class name="Tests.PRISIJUNGTI"/> <!-- Prisijungti prie savo paskyros -->
+				<class name="Tests.ATSIJUNGTI"/> <!-- Atsijungti nuo paskyros-->
+
+
+			</classes>
+		</test>
+		<!-- Test -->
+
+	</suite>
+	<!-- Suite -->
